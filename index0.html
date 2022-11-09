@@ -5,8 +5,23 @@
     <title>My works presentation web site</title>
     <style>
  
+      a {
+          text-style: none;
+      }
+
+      a:hover {
+          color: yellow;
+          text-decoration: none;
+          font-style: bold;
+          font-size: 18px;
+          background-color: red;
+          
+      }
       ul {
-          display: grid;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+
           grid-template-columns: 1fr 1fr 1fr;
           grid-template-rows: 200px 200px 200px;
           column-count: ;
@@ -135,14 +150,41 @@
   </header>
     <section>  
       <ul>
-        <li class="php">PHP + MySQL
+        <li class="php"><a href=#php>PHP + MySQL</a>
+         
+        </li>
+        <li class="jsp"><a href=#jsp>JSP</a>
+          
+        </li>
+        <li class="java"><a href=#java>Java</a>
+          
+        </li> 
+        <li class="bash"><a href=#bash>Linux Bash Shell</a>
+          
+        </li>      
+        <li class="circuit"><a href=#circuit>電路板製作</a>
+          
+        </li>
+        <li class="8051"><a href=#8051>8051</a>
+          
+        </li>        
+        <li class="other"><a href=#other>其他</a>
+          
+        </li>
+
+      </ul>
+    </section>
+
+<section>  
+      
+        <p class="php" id="php">PHP + MySQL
           <ol>
             <li>
               <label for="name"><a href="https://youtu.be/M3oe7Y3vVwI" target="_blank">餐廳管理系統 (designed by MySQL+PHP)</a></label>
             </li>
           </ol> 
-        </li>
-        <li class="jsp">JSP
+        </p>
+        <p class="jsp" id="jsp">JSP
           <ol>
             <li>
               <label for="mail"><a href="https://youtu.be/TKBB3c0JBmE" target="_blank">微網誌4 - JSP / EL / Scriptlet (請開字幕)</a></label>
@@ -160,8 +202,8 @@
               <label for="msg"><a href="https://youtu.be/V2PY5c1sEDU" target="_blank">利用網路程式接收外部信箱郵件並作簡單管理 ~＿</a></label>
             </li>
           </ol>
-        </li>
-        <li class="java">Java
+        </p>
+        <p class="java" id="java">Java
           <ol>        
             <li>
               <label for="msg"><a href="https://youtu.be/Qa2ZBR9YCjU" target="_blank">自寫俄羅斯方塊遊戲 (失敗畫面) by Java</a></label>
@@ -173,22 +215,22 @@
               <label for="msg"><a href="https://youtu.be/FyONa0ZSLjo" target="_blank">Java 計算機模擬程式操作示範</a></label>
             </li> 
           </ol>
-        </li> 
-        <li class="bash">Linux Bash Shell
+        </p> 
+        <p class="bash" id="bash">Linux Bash Shell
           <ol>
             <li>
               <label for="msg"><a href="https://youtu.be/Rz6I4BgxRZw" target="_blank">CD 資料庫管理程式 ~</a></label>
             </li>
           </ol>
-        </li>      
-        <li class="circuit">電路板製作
+        </p>      
+        <p class="circuit" id="circuit">電路板製作
           <ol>
             <li>
               <label for="msg"><a href="https://youtu.be/lYZt_Djydxg" target="_blank">點唱機電路板製作全記錄</a></label>
             </li>
           </ol>
-        </li>
-        <li class="8051">8051
+        </p>
+        <p class="8051" id="8051">8051
           <ol>
             <li>
               <label for="msg"><a href="https://youtu.be/moQJW8pPWE0" target="_blank">8x8雙色點矩陣 by Keil C</a></label>
@@ -311,17 +353,18 @@
               <label for="msg"><a href="https://youtu.be/MI1HeYQ_mro" target="_blank">MOV04486.MPG</a></label>
             </li>
           </ol>
-        </li>        
-        <li class="other">其他
+        </p>        
+        <p class="other" id="other">其他
           <ol>
             <li>
               <label for="msg"><a href="https://youtu.be/Mcy3XT_HCjU" target="_blank">自製 12V 電源供應器</a></label>
             </li>
           </ol>
-        </li>
+        </p>
 
-      </ul>
+      
     </section>
+
     <footer>
     </footer>
 
