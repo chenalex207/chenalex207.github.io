@@ -4,86 +4,112 @@
     <meta charset="utf-8">
     <title>My works presentation web site</title>
     <style>
+      html {
+          font-family: sans-serif;
+      }
+
+      * {
+         //box-sizing: border-box;
+      }
+
       body {
           margin: 0 auto;
       } 
 
-      a {
-          text-style: none;
+      h1 {
+        
+      }     
+
+      section {
+          width: 750px; 
+          height: 550px;
+          margin: 0 auto 50px;
+     } 
+     
+     .panels {
+         position: relative;
+         height: 460px; 
+     }
+
+     .panels article {
+         background-color: rgb(123, 212, 175);
+         color: green;    
+         position: absolute;
+         padding: 20px 20px;
+         width: 708px;     
+         height: inherit; 
+         top: 0;
+         left: 0;
+         overflow: hidden;
+     }
+
+     .panels .active-panel {
+        z-index: 1;
+     }
+
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
       }
 
-      a:hover {
-          color: yellow;
-          text-decoration: none;
-          font-style: bold;
-          font-size: 18px;
-          background-color: red;
-          
-      }
       ul {
           display: flex;
-          align-items: center;
-          justify-content: space-around;
-
-          grid-template-columns: 1fr 1fr 1fr;
-          grid-template-rows: 200px 200px 200px;
-          column-count: ;
-          gap: 10px;
-
       }
 
       ul > li {
-        border: 2px solid aqua;
+        width: 82px;
+        height: 3em;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        flex: 1;
+      }
+
+      ul > li a {
+          display: inline-block;
+          width: inherit;
+          height: inherit;
+          text-decoration: none;
+          outline: none;
+      }
+
+
+      ul > li a.active, ul > li a:hover, ul > li a:focus {
         background: rgb(123, 212, 175);
-        border-radius: 10px;
-        margin: 5px;
-        padding: 10px;
+        padding: 5px;
       } 
 
-      h1 {
-        justify-content: space-around;
-      }     
-
-      ul {
-        list-style-type: square ;
-        list-style-position: inside;
-        padding: 1em;
-        margin: 0em;
-      } 
-
-      .button {
-        /* Align buttons with the text fields */
-        padding-left: 90px; /* same size as the label elements */
+      a:hover, a:focus {
+          color: yellow;
+          font-style: bold;
+          font-size: 18px;
+          background-color: red;
       }
 
-      button {
-        /* This extra margin represent roughly the same space as the space
-        between the labels and their text fields */
-        margin-left: .5em;
-      }
 
-section {
 
- 
+
+
+  section {
+    border: 5px double rgb(123, 212, 175);;
+  }
+
+  ul, li {
+    //border: 1px solid red;
+  }
+
+  a {
+    //border: 1px solid green;
+  }
 
   .panels {
-   position: relative;
-   width: 450px;
-   height: 352px;
+    //border: 1px solid yellow;
   }
 
-  .panels article {
-    background-color: #b60000;
-    color: white;
-    position: absolute;
-    padding: 10px 20px;
-    height: 352px;
-    top: 0;
-    left: 0;
-  }
-
-  .panels .active-panel {
-    z-index: 1;
+  article {
+    //border: 1px solid black;
   }
 
     </style>
@@ -94,19 +120,19 @@ section {
     <h1>作品集展示</h1>
   </header>
     <section>  
-      <ul class="subject">
-        <li class="active"><a href=#php>PHP + MySQL</a></li>
-        <li class=""><a href=#jsp>JSP</a></li>
-        <li class=""><a href=#java>Java</a></li> 
-        <li class=""><a href=#bash>Linux Bash Shell</a></li>      
-        <li class=""><a href=#circuit>電路板製作</a></li>
-        <li class=""><a href=#8051>8051</a></li>        
-        <li class=""><a href=#other>其他</a></li>
-      </ul>
-    
 
-<div class="panels">  
-      
+      <ul class="subject">
+        <li ><a href=# class="active">PHP + MySQL</a></li>
+        <li class=""><a href=#>JSP</a></li>
+        <li class=""><a href=#>Java</a></li> 
+        <li class=""><a href=#>Linux Bash Shell</a></li>      
+        <li class=""><a href=#>電路板製作</a></li>
+        <li class=""><a href=#>8051-1</a></li>
+        <li class=""><a href=#>8051-2</a></li>        
+        <li class=""><a href=#>其他</a></li>
+      </ul>
+
+   <div class="panels">  
         <article class="active-panel" id="php">PHP + MySQL
           <ol>
             <li>
@@ -160,7 +186,7 @@ section {
             </li>
           </ol>
         </article>
-        <article class="" id="8051">8051
+        <article class="" id="8051">8051-1
           <ol>
             <li>
               <label for="msg"><a href="https://youtu.be/moQJW8pPWE0" target="_blank">8x8雙色點矩陣 by Keil C</a></label>
@@ -222,6 +248,10 @@ section {
             <li>
               <label for="msg"><a href="https://youtu.be/gNfjXovu-lc" target="_blank">用串列埠單向傳送資料 31</a></label>
             </li>
+          </ol>
+        </article>
+        <article class="" id="8051">8051-2
+          <ol>
             <li>
               <label for="msg"><a href="https://youtu.be/FSJocvOe184" target="_blank">單顆8051自傳自送資料 30</a></label>
             </li>
