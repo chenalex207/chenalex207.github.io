@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>My Bookmark</title>
+    <style>
+      html {
+          font-family: sans-serif;
+      }
+
+      * {
+         //box-sizing: border-box;
+      }
+
+      body {
+          margin: 0 auto;
+      } 
+
+      h1 {
+        
+      }     
+
+      section {
+          width: 750px; 
+          height: 550px;
+          margin: 0 auto 50px;
+     } 
+     
+     .panels {
+         position: relative;
+         height: 460px; 
+     }
+
+     .panels article {
+         background-color: rgb(123, 212, 175);
+         color: green;    
+         position: absolute;
+         padding: 20px 20px;
+         width: 708px;     
+         height: inherit; 
+         top: 0;
+         left: 0;
+         overflow: hidden;
+     }
+
+     .panels .active-panel {
+        z-index: 1;
+     }
+
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+          display: flex;
+      }
+
+      ul > li {
+        width: 82px;
+        height: 3em;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        flex: 1;
+      }
+
+      ul > li a {
+          display: inline-block;
+          width: inherit;
+          height: inherit;
+          text-decoration: none;
+          outline: none;
+      }
+
+
+      ul > li a.active, ul > li a:hover, ul > li a:focus {
+        background: rgb(123, 212, 175);
+        padding: 5px;
+      } 
+
+      a:hover, a:focus {
+          color: yellow;
+          font-style: bold;
+          font-size: 18px;
+          background-color: red;
+      }
+
+
+
+
+
+  section {
+    border: 5px double rgb(123, 212, 175);;
+  }
+
+  ul, li {
+    //border: 1px solid red;
+  }
+
+  a {
+    //border: 1px solid green;
+  }
+
+  .panels {
+    //border: 1px solid yellow;
+  }
+
+  article {
+    //border: 1px solid black;
+  }
+
+  header ul li a {
+    right: 15px;
+    text-alignment: right;
+    //border: 1px solid red;
+    //text-decoration: line-through red wavy
+    
+  }
+    </style>
+
+  </head>
+  <body>
+  <header>
+    <h1>書籤</h1>
+    <ul>
+            <li>
+              <label for="name"><a href="https://chenalex207.github.io/weather-app/"> 今日天氣 (React App) </a></label>
+            </li>
+          </ul>
+  </header>
+    <section>  
+
+      <ul class="subject">
+        <li ><a href=# class="active">IT邦幫忙</a></li>
+        <li ><a href=# class="">Git 教學</a></li>
+        <li class=""><a href=#>MDN</a></li>
+        <li class=""><a href=#>翻轉工作室</a></li> 
+        <li class=""><a href=#>React 官網</a></li>      
+        <li class=""><a href=#>定位實例練習</a></li>
+        <li class=""><a href=#>如何在 git hub 上放 react app</a></li>
+        <li class=""><a href=#>codepen & codesandbox</a></li>        
+        <li class=""><a href=#>其他</a></li>
+      </ul>
+
+   <div class="panels">
+        <article class="active-panel" id="react">IT邦幫忙
+          <ol>
+            <li>
+              <label for="name"><a href="https://ithelp.ithome.com.tw/articles/10223268" target="_blank">JavaScript 初心者筆記: 實作旅館訂房網站心得 - 第 2 屆 The F2E 第六關</a></label>
+            </li>
+            <li>
+              <label for="name"><a href="https://ithelp.ithome.com.tw/articles/10192015" target="_blank">重新認識 JavaScript: Day 15 隱藏在 "事件" 之中的秘密</a></label>
+            </li>
+            <li>
+              <label for="name"><a href="https://ithelp.ithome.com.tw/articles/10228556" target="_blank">[Day 30 - 臺灣好天氣] 發布上 Github Pages 不夠，還要變成手機 App！還有那些重要但故意先不告訴你的內容</a></label>
+            </li>
+            <li>
+              <label for="name"><a href="https://ithelp.ithome.com.tw/articles/10243438" target="_blank">[CSS] 元素置中的 N 個方法</a></label>
+            </li>
+            <li>
+              <label for="name"><a href="https://ithelp.ithome.com.tw/articles/10202205" target="_blank">使用CSS line-height + inline-block 做多行文字的垂直置中</a></label>
+            </li>
+            <li>
+              <label for="name"><a href="https://ithelp.ithome.com.tw/articles/10187529" target="_blank">Day 10 - 30 天 Progressive Web App 學習筆記 - Service Work 簡介</a></label>
+            </li>
+            <li>
+              <label for="name"><a href="https://ithelp.ithome.com.tw/articles/10222534" target="_blank">::before & ::after 無中生有的僞元素選取器 - 傑克這真是太神奇啦</a></label>
+            </li>
+            <li>
+              <label for="name"><a href="https://ithelp.ithome.com.tw/articles/10292441">Day 2 - 為什麼要用 jQuery</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://www.google.com/search?q=jQuery+%E9%9C%80%E8%A6%81%E5%AD%B8%E5%97%8E+%3F&oq=jQuery+%E9%9C%80%E8%A6%81%E5%AD%B8%E5%97%8E+%3F&aqs=chrome..69i57j33i160l2.28601j0j15&sourceid=chrome&ie=UTF-8" target="_blank">jQuery 需要學嗎 ?</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://ithelp.ithome.com.tw/articles/10253549" target="_blank">JavaScript基本功修練：Day30 - AJAX常遇上的同源政策問題與解決方法</a></label>
+            </li>
+          </ol>
+        </article>  
+        <article class="" id="php">Git 教學
+          <ol>
+            <li>
+              <label for="name"><a href="https://gitbook.tw/" target="_blank">Git 教學 - Git 書 - 為你自己學 Git | 高見龍</a></label>
+            </li>
+          </ol> 
+        </article>
+        <article class="" id="jsp">MDN
+          <ol>
+            <li>
+              <label for="mail"><a href="https://developer.mozilla.org/zh-TW/docs/Learn" target="_blank">MDN</a></label>
+            </li>
+            <li>
+              <label for="mail"><a href="https://developer.mozilla.org/zh-TW/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure" target="_blank">Document and website structure</a></label>
+            </li>
+            <li>
+              <label for="mail"><a href="https://javascript.alphacamp.co/js-free-self-study-resources.html?_ga=2.241034691.1764266804.1669261057-1121621087.1669261057" target="_blank">JavaScript 免費自學資源</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://www.google.com/search?q=sass+mdn&oq=SASS+mdn&aqs=chrome.0.0i512j0i390l3.8270j0j15&sourceid=chrome&ie=UTF-8" target="_blank">sass mdn</a></label>
+            </li>
+          </ol>
+        </article>
+        <article class="" id="java">翻轉工作室
+          <ol>        
+            <li>
+              <label for="msg"><a href="http://www.tsnien.idv.tw/" target="_blank">翻轉工作室</a></label>
+            </li>        
+          </ol>
+        </article>
+        <article class="" id="bash">React 官網
+          <ol>
+            <li>
+              <label for="msg"><a href="https://zh-hant.reactjs.org/tutorial/tutorial.html" target="_blank">React 官網</a></label>
+            </li>
+          </ol>
+        </article>      
+        <article class="" id="circuit">定位實例練習
+          <ol>
+            <li>
+              <label for="msg"><a href="file:///C:/web-project/%E5%AE%9A%E4%BD%8D/%E5%AE%9A%E4%BD%8D%E5%AF%A6%E4%BE%8B%E7%B7%B4%E7%BF%92/info-box.html#" target="_blank">定位實例練習</a></label>
+            </li>
+          </ol>
+        </article>
+        <article class="" id="8051">如何在 git hub 上放 react app
+          <ol>
+            <li>
+              <label for="msg"><a href="https://www.google.com/search?q=%E5%A6%82%E4%BD%95%E5%9C%A8+git+hub+%E4%B8%8A%E6%94%BE+react+app&oq=%E5%A6%82%E4%BD%95%E5%9C%A8+git+hub+%E4%B8%8A%E6%94%BE+react+app&aqs=chrome..69i57j0i546l4.37128j0j15&sourceid=chrome&ie=UTF-8" target="_blank">如何在 git hub 上放 react app</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://leodflagblog.wordpress.com/2021/01/06/%E7%B0%A1%E5%96%AE%E4%BD%BF%E7%94%A8github-io%E8%88%87gh-pages%E5%88%86%E6%94%AF%E5%8A%9F%E8%83%BD%E4%BE%86%E6%9E%B6%E8%A8%AD%E9%9D%9C%E6%85%8B%E7%B6%B2%E9%A0%81/" target="_blank">簡單使用github.io與gh-pages分支功能來架設靜態網頁</a></label>
+            </li>        
+             </ol>
+        </article>
+        <article class="" id="8051">codepen & codesandbox
+          <ol>
+            <li>
+              <label for="msg"><a href="https://codesandbox.io/s/gallant-jones-wlqrbs?file=/src/WeatherApp.js" target="_blank">codesandbox</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://codepen.io/Alex-Chen-the-encoder/pen/NWBEVbj" target="_blank">CodePen Home
+Day 11 - Network Speed Converter with props</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://codesandbox.io/s/weather-app-add-dark-mode-feature-forked-11tdui?file=/src/sunrise-sunset.json:1036477-1036480" target="_blank">Weather APP - Add dark mode feature (forked)</a></label>
+            </li>
+            </ol>
+        </article>        
+        <article class="" id="other">其他
+          <ol>
+            <li>
+              <label for="msg"><a href="" target="_blank"></a></label>
+            </li>
+          </ol>
+        </article>
+     
+    </div>
+    </section>
+    <footer>
+    </footer>
+
+<script>
+
+var tabs = document.querySelectorAll('.subject li a');
+var panels = document.querySelectorAll('.panels article');
+
+for(i = 0; i < tabs.length; i++) {
+  var tab = tabs[i];
+  setTabHandler(tab, i);
+}
+
+function setTabHandler(tab, tabPos) {
+  tab.onclick = function() {
+    for(i = 0; i < tabs.length; i++) {
+      tabs[i].className = '';
+    }
+
+    tab.className = 'active';
+
+    for(i = 0; i < panels.length; i++) {
+      panels[i].className = '';
+    }
+
+    panels[tabPos].className = 'active-panel';
+  }
+}
+
+</script>
+
+
+  </body>
+</html>
