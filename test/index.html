@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>My works presentation web site</title>
+    <style>
+      html {
+          font-family: sans-serif;
+      }
+
+      * {
+         //box-sizing: border-box;
+      }
+
+      body {
+          margin: 0 auto;
+      } 
+
+      h1 {
+        
+      }     
+
+      section {
+          width: 750px; 
+          height: 550px;
+          margin: 0 auto 50px;
+     } 
+     
+     .panels {
+         position: relative;
+         height: 460px; 
+     }
+
+     .panels article {
+         background-color: rgb(123, 212, 175);
+         color: green;    
+         position: absolute;
+         padding: 20px 20px;
+         width: 708px;     
+         height: inherit; 
+         top: 0;
+         left: 0;
+         overflow: hidden;
+     }
+
+     .panels .active-panel {
+        z-index: 1;
+     }
+
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+          display: flex;
+      }
+
+      ul > li {
+        width: 82px;
+        height: 3em;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        flex: 1;
+      }
+
+      ul > li a {
+          display: inline-block;
+          width: inherit;
+          height: inherit;
+          text-decoration: none;
+          outline: none;
+      }
+
+
+      ul > li a.active, ul > li a:hover, ul > li a:focus {
+        background: rgb(123, 212, 175);
+        padding: 2px;
+      } 
+
+      a:hover, a:focus {
+          color: yellow;
+          font-style: bold;
+          font-size: 18px;
+          background-color: red;
+      }
+
+      footer {
+        align-items: right;
+      }
+
+      aside ul {
+        display: inline-block;
+      }
+
+  section {
+    border: 5px double rgb(123, 212, 175);;
+  }
+
+  ul, li {
+    //border: 1px solid red;
+  }
+
+  a {
+    //border: 1px solid green;
+  }
+
+  .panels {
+    //border: 1px solid yellow;
+  }
+
+  article {
+    //border: 1px solid black;
+  }
+
+   header ul li a {
+    //right: 15px;
+    //text-alignment: right;
+    //border: 1px solid red;
+    //text-decoration: line-through red wavy
+    
+  }
+    </style>
+
+  </head>
+<body>
+  <header>
+    <h1>陳才元 作品集展示</h1>
+    <ul>
+      <li>
+        <label for="name"><a href="https://chenalex207.github.io/weather-app/"> 今日天氣 (React App) </a></label>
+      </li>    
+    </ul>
+  </header>
+<div>
+  <section>  
+
+      <ul class="subject">
+        <li ><a href=# class="active">React</a></li>
+        <li ><a href=# class="">PHP + MySQL</a></li>
+        <li class=""><a href=#>JSP</a></li>
+        <li class=""><a href=#>Java</a></li> 
+        <li class=""><a href=#>Linux Bash Shell</a></li>      
+        <li class=""><a href=#>電路板製作</a></li>
+        <li class=""><a href=#>8051-1</a></li>
+        <li class=""><a href=#>8051-2</a></li>        
+        <li class=""><a href=#>其他</a></li>
+      </ul>
+
+      <div class="panels">
+        <article class="active-panel" id="react">React
+          <ol>
+            <li>
+              <label for="name"><a href="https://chenalex207.github.io/react-game/">玩玩小遊戲 (React game)</a></label>
+            </li>
+          </ol>
+        </article>  
+        <article class="" id="php">PHP + MySQL
+          <ol>
+            <li>
+              <label for="name"><a href="https://youtu.be/M3oe7Y3vVwI" target="_blank">餐廳管理系統 (designed by MySQL+PHP)</a></label>
+            </li>
+          </ol> 
+        </article>
+        <article class="" id="jsp">JSP
+          <ol>
+            <li>
+              <label for="mail"><a href="https://youtu.be/TKBB3c0JBmE" target="_blank">微網誌4 - JSP / EL / Scriptlet (請開字幕)</a></label>
+            </li>
+          </ol>
+        </article>
+        <article class="" id="java">Java
+          <ol>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/Qa2ZBR9YCjU" target="_blank">自寫俄羅斯方塊遊戲 (失敗畫面) by Java</a></label>
+            </li>        
+          </ol>
+          <p>
+          "自寫俄羅斯方塊遊戲程式碼"連結：https://github.com/chenalex207/Tetris6/blob/master/Tetris6.java
+          </p> 
+        </article>
+        <article class="" id="bash">Linux Bash Shell
+          <ol>
+            <li>
+              <label for="msg"><a href="https://youtu.be/Rz6I4BgxRZw" target="_blank">CD 資料庫管理程式 ~</a></label>
+            </li>
+          </ol>
+        </article>      
+        <article class="" id="circuit">電路板製作
+          <ol>
+            <li>
+              <label for="msg"><a href="https://youtu.be/lYZt_Djydxg" target="_blank">點唱機電路板製作全記錄</a></label>
+            </li>
+          </ol>
+        </article>
+        <article class="" id="8051">8051-1
+          <ol>
+            <li>
+              <label for="msg"><a href="https://youtu.be/moQJW8pPWE0" target="_blank">8x8雙色點矩陣 by Keil C</a></label>
+            </li>        
+          </ol>
+        </article>
+        <article class="" id="8051">8051-2
+          <ol>
+            <li>
+              <label for="msg"><a href="https://youtu.be/FSJocvOe184" target="_blank">單顆8051自傳自送資料 30</a></label>
+            </li>
+          </ol>
+        </article>        
+        <article class="" id="other">其他
+          <ol>
+            <li>
+              <label for="msg"><a href="https://youtu.be/Mcy3XT_HCjU" target="_blank">自製 12V 電源供應器</a></label>
+            </li>
+          </ol>
+        </article>
+      </div>
+
+ </section>
+ 
+ <aside>
+
+  <ul class="subject">
+    <li ><a href=# class="active">React</a></li>
+    <li ><a href=# class="">PHP + MySQL</a></li>
+    <li class=""><a href=#>JSP</a></li>
+    <li class=""><a href=#>Java</a></li> 
+    <li class=""><a href=#>Linux Bash Shell</a></li>      
+    <li class=""><a href=#>電路板製作</a></li>
+    <li class=""><a href=#>8051-1</a></li>
+    <li class=""><a href=#>8051-2</a></li>        
+    <li class=""><a href=#>其他</a></li>
+  </ul>
+
+</aside>
+
+</div>
+ 
+  <footer>
+    <p>designed by Alex Chen (陳才元)</p>
+  </footer>
+
+  <script>
+
+    var tabs = document.querySelectorAll('.subject li a');
+    var panels = document.querySelectorAll('.panels article');
+    
+    for(i = 0; i < tabs.length; i++) {
+      var tab = tabs[i];
+      setTabHandler(tab, i);
+    }
+    
+    function setTabHandler(tab, tabPos) {
+      tab.onclick = function() {
+        for(i = 0; i < tabs.length; i++) {
+          tabs[i].className = '';
+        }
+    
+        tab.className = 'active';
+    
+        for(i = 0; i < panels.length; i++) {
+          panels[i].className = '';
+        }
+    
+        panels[tabPos].className = 'active-panel';
+      }
+    }
+    
+  </script>
+
+
+</body>
+</html>
