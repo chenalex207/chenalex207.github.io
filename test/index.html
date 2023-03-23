@@ -14,6 +14,7 @@
 
       body {
           margin: 0 auto;
+          background: rgba(255,255,255,.2);
       } 
 
       h1 {
@@ -96,8 +97,19 @@
         display: inline-block;
       }
 
+      header {
+  background: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.2) 39%,
+        rgba(51, 56, 57, 1) 96%
+      ) center center / 400px 200px no-repeat, url(day-clear.svg) center
+      no-repeat, rebeccapurple;
+      margin: 10px;
+}
+
   section {
-    border: 5px double rgb(123, 212, 175);;
+    border: 5px double rgb(123, 212, 175);
+    margin-top: 10px;
   }
 
   ul, li {
