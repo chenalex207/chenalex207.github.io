@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>My works presentation web site</title>
+    <style>
+      html {
+          font-family: sans-serif;
+      }
+
+      * {
+         //box-sizing: border-box;
+      }
+
+      body {
+          margin: 0 auto;
+      } 
+
+      h1 {
+        
+      }     
+
+      section {
+          width: 750px; 
+          height: 550px;
+          margin: 0 auto 50px;
+     } 
+     
+     .panels {
+         position: relative;
+         height: 460px; 
+     }
+
+     .panels article {
+         background-color: rgb(123, 212, 175);
+         color: green;    
+         position: absolute;
+         padding: 20px 20px;
+         width: 708px;     
+         height: inherit; 
+         top: 0;
+         left: 0;
+         overflow: hidden;
+     }
+
+     .panels .active-panel {
+        z-index: 1;
+     }
+
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul {
+          display: flex;
+      }
+
+      ul > li {
+        width: 82px;
+        height: 3em;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        flex: 1;
+      }
+
+      ul > li a {
+          display: inline-block;
+          width: inherit;
+          height: inherit;
+          text-decoration: none;
+          outline: none;
+      }
+
+
+      ul > li a.active, ul > li a:hover, ul > li a:focus {
+        background: rgb(123, 212, 175);
+        padding: 2px;
+      } 
+
+      a:hover, a:focus {
+          color: yellow;
+          font-style: bold;
+          font-size: 18px;
+          background-color: red;
+      }
+
+
+
+
+
+  section {
+    border: 5px double rgb(123, 212, 175);
+    margin-top: 10px;
+  }
+
+  ul, li {
+    //border: 1px solid red;
+  }
+
+  a {
+    //border: 1px solid green;
+  }
+
+  .panels {
+    //border: 1px solid yellow;
+  }
+
+  article {
+    //border: 1px solid black;
+  }
+
+  header ul li a {
+    right: 15px;
+    text-alignment: right;
+    //border: 1px solid red;
+    //text-decoration: line-through red wavy
+    
+  }
+    </style>
+
+  </head>
+  <body>
+  <header>
+    <h1>作品集展示</h1>
+    <ul>
+            <li>
+              <label for="name"><a href="https://chenalex207.github.io/weather-app/"> 今日天氣 (React App) </a></label>
+            </li>
+          </ul>
+  </header>
+    <section>  
+
+      <ul class="subject">
+        <li ><a href=# class="active">React</a></li>
+        <li ><a href=# class="">PHP + MySQL</a></li>
+        <li class=""><a href=#>JSP</a></li>
+        <li class=""><a href=#>Java</a></li> 
+        <li class=""><a href=#>Linux Bash Shell</a></li>      
+        <li class=""><a href=#>電路板製作</a></li>
+        <li class=""><a href=#>8051-1</a></li>
+        <li class=""><a href=#>8051-2</a></li>        
+        <li class=""><a href=#>其他</a></li>
+      </ul>
+
+   <div class="panels">
+        <article class="active-panel" id="react">React
+          <ol>
+            <li>
+              <label for="name"><a href="https://chenalex207.github.io/react-game/">玩玩小遊戲 (React game)</a></label>
+            </li>
+          </ol>
+          <p>
+             練習部署 React 官網上的圈圈叉叉小遊戲到 GitHub 上並參照指南後面要求增加新的功能 : <br>
+          </p> 
+          <p>新增功能 :
+             <ol>
+             <li>在歷史動作列表中，用（欄，列）的格式來顯示每個動作的位置。</li>
+             <li>在動作列表中，將目前被選取的項目加粗。</li>
+             <li>加上一個切換按鈕讓你可以根據每個動作由小到大、由大到小來排序。</li>
+             <li>當勝負揭曉時，把連成一條線的那三個方格凸顯出來。</li>
+             <li>當沒有勝負時，顯示遊戲結果為平手。</li>
+            </ol>
+          </p>
+          <p>
+          程式碼連結：https://github.com/chenalex207/react-game
+          </p>
+        </article>  
+        <article class="" id="php">PHP + MySQL
+          <ol>
+            <li>
+              <label for="name"><a href="https://youtu.be/M3oe7Y3vVwI" target="_blank">餐廳管理系統 (designed by MySQL+PHP)</a></label>
+            </li>
+          </ol> 
+        </article>
+        <article class="" id="jsp">JSP
+          <ol>
+            <li>
+              <label for="mail"><a href="https://youtu.be/TKBB3c0JBmE" target="_blank">微網誌4 - JSP / EL / Scriptlet (請開字幕)</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/eJg5OI4_hV8" target="_blank">微網誌3 - 字元過濾器、編碼設定、模型處理 (請開字幕)</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/XjQlpmk6evg" target="_blank">微網誌2 - 留言板功能 (請開字幕)</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/aWFBH8FeBG0" target="_blank">微網誌1 - 註冊、建檔、登入 (請開字幕)</a></label>
+            </li>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/V2PY5c1sEDU" target="_blank">利用網路程式接收外部信箱郵件並作簡單管理 ~＿</a></label>
+            </li>
+          </ol>
+        </article>
+        <article class="" id="java">Java
+          <ol>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/Qa2ZBR9YCjU" target="_blank">自寫俄羅斯方塊遊戲 (失敗畫面) by Java</a></label>
+            </li>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/HVuNgw89U1s" target="_blank">自寫俄羅斯方塊遊戲 (過關畫面) by Java</a></label>
+            </li>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/FyONa0ZSLjo" target="_blank">Java 計算機模擬程式操作示範</a></label>
+            </li> 
+          </ol>
+          <p>
+          "自寫俄羅斯方塊遊戲程式碼"連結：https://github.com/chenalex207/Tetris6/blob/master/Tetris6.java
+          </p> 
+        </article>
+        <article class="" id="bash">Linux Bash Shell
+          <ol>
+            <li>
+              <label for="msg"><a href="https://youtu.be/Rz6I4BgxRZw" target="_blank">CD 資料庫管理程式 ~</a></label>
+            </li>
+          </ol>
+        </article>      
+        <article class="" id="circuit">電路板製作
+          <ol>
+            <li>
+              <label for="msg"><a href="https://youtu.be/lYZt_Djydxg" target="_blank">點唱機電路板製作全記錄</a></label>
+            </li>
+          </ol>
+        </article>
+        <article class="" id="8051">8051-1
+          <ol>
+            <li>
+              <label for="msg"><a href="https://youtu.be/moQJW8pPWE0" target="_blank">8x8雙色點矩陣 by Keil C</a></label>
+            </li>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/4dLe8dYoA_s" target="_blank">8051簡易計算機KeyPad by Keil C</a></label>
+            </li>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/0ROQZsIvm4o" target="_blank">8051簡易計算機 by Keil C</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/1Q5tjUesI1g" target="_blank">8x8點矩陣LED 練習用 by Keil C</a></label>
+            </li>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/yeJMcbOZgCs" target="_blank">勝利之翼 -  練習用 by Keil C</a></label>
+            </li>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/8rWY7Xf0SJA" target="_blank">點唱機練習用 by KeilC~</a></label>
+            </li>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/hStylQZ9_D8" target="_blank">兩個MCS 51互相傳送資料(負載驅動)_32</a></label>
+            </li>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/rTsFLqNfX1k" target="_blank">矩陣鍵盤7段顯示器顯示數字 19(用小鍵盤取代按鈕)</a></label>
+            </li>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/GW4N-Ea5MPM" target="_blank">矩陣鍵盤LED顯示數字 19(用小鍵盤取代按鈕)</a></label>
+            </li>        
+            <li>
+              <label for="msg"><a href="https://youtu.be/97nNlQIYMOo" target="_blank">大功率閃爍警告燈</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/-F_I-SPs7gg" target="_blank">LCD顯示自建圖案動畫40</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/992TwCD3ZVI" target="_blank">LCD顯示 39</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/NoOnTr55Efs" target="_blank">LCD顯示自建圖案 38</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/5cSn_-PnXZQ" target="_blank">警告聲產生器 37</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/RRPFmrWyCeU" target="_blank">鈴聲產生器 36</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/5oqRPdtVMiM" target="_blank">忙音產生器 35</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/wscmTV_khAY" target="_blank">電子琴 34</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/pO4H2shSPO4" target="_blank">七段顯示器顯示數字 33</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/r2czoHjFBKg" target="_blank">兩個MCS 51互相傳送資料 32</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/gNfjXovu-lc" target="_blank">用串列埠單向傳送資料 31</a></label>
+            </li>
+          </ol>
+        </article>
+        <article class="" id="8051">8051-2
+          <ol>
+            <li>
+              <label for="msg"><a href="https://youtu.be/FSJocvOe184" target="_blank">單顆8051自傳自送資料 30</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/gas6MWLS8LY" target="_blank">用串列埠擴充輸出埠2 29</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/qyINvYHbI3c" target="_blank">用串列埠擴充輸出埠1 28</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/fKBVdrxrcvE" target="_blank">外部中斷信號改變輸出狀態 27</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/LHdGh2XJW-Q" target="_blank">用計數中斷改變輸出狀態 26</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/eVgJSblOwP8" target="_blank">用計數器輸入10個脈波改變輸出狀態 25</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/ByB0FnDof7U" target="_blank">用計數器輸入5個脈波改變輸出狀態 24</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/RXmuT0yMsMA" target="_blank">用按鈕控制動作狀態2 23</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/YI8z8CTOhVs" target="_blank">外部中斷信號改變輸出狀態1 22</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/11s7hjsEr2I" target="_blank">使用計時器中斷做走馬燈 21</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/PhNqSG-rNOw" target="_blank">使用計時器做走馬燈 20</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/M4IS9zXFglI" target="_blank">矩陣鍵盤LED顯示數字 19</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/IaprgZSnE2k" target="_blank">用開關選擇動作狀態 18</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/914TbojJJOM" target="_blank">用按鈕控制動作狀態 17</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/Lr7pCY6U4kA" target="_blank">用按鈕代替開關選擇動作狀態 16</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/GRfibbNx0Uc" target="_blank">廣告燈2 15</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/kLGIr23JM-Y" target="_blank">廣告燈 14</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/BS4owEJcNqc" target="_blank">霹靂燈 13</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/Gv-8HpXEttk" target="_blank">閃爍燈 12</a></label>
+            </li>
+            <li>
+              <label for="msg"><a href="https://youtu.be/MI1HeYQ_mro" target="_blank">MOV04486.MPG</a></label>
+            </li>
+          </ol>
+        </article>        
+        <article class="" id="other">其他
+          <ol>
+            <li>
+              <label for="msg"><a href="https://youtu.be/Mcy3XT_HCjU" target="_blank">自製 12V 電源供應器</a></label>
+            </li>
+          </ol>
+        </article>
+     
+    </div>
+    </section>
+    <footer>
+    </footer>
+
+<script>
+
+var tabs = document.querySelectorAll('.subject li a');
+var panels = document.querySelectorAll('.panels article');
+
+for(i = 0; i < tabs.length; i++) {
+  var tab = tabs[i];
+  setTabHandler(tab, i);
+}
+
+function setTabHandler(tab, tabPos) {
+  tab.onclick = function() {
+    for(i = 0; i < tabs.length; i++) {
+      tabs[i].className = '';
+    }
+
+    tab.className = 'active';
+
+    for(i = 0; i < panels.length; i++) {
+      panels[i].className = '';
+    }
+
+    panels[tabPos].className = 'active-panel';
+  }
+}
+
+</script>
+
+
+  </body>
+</html>
