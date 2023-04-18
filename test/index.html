@@ -3,9 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>My works presentation web site</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("header").fadeIn(3000);
+    $("h1").fadeIn(3000);
+    $("h2").fadeIn(3000);
+    $("h3").fadeIn(3000);
+  
+});
+</script>
+</script>
     <style>
       html {
-          font-family: sans-serif;
+          font-family: serif, monospace, cursive, fantasy, Papyrus, Times New Roman, arial, Courier New, sans-serif;
+          padding: 0;
       }
 
       * {
@@ -14,12 +26,16 @@
 
       body {
           margin: 0 auto;
-          background: rgba(255,255,255,.2);
+          background: lightgrey;
       } 
 
       h1 {
         
       }     
+
+      h2, h3 {
+          text-align: right;
+      }        
 
       section {
           width: 750px; 
@@ -102,14 +118,38 @@
         105deg,
         rgba(255, 255, 255, 0.2) 39%,
         rgba(51, 56, 57, 1) 96%
-      ) center center / 400px 200px no-repeat, url(day-clear.svg) center
-      no-repeat, rebeccapurple;
-      margin: 10px;
+      ) center center / 400px no-repeat, url(day-clear.svg) center
+      no-repeat, lightblue;
+
+      //margin: 10px;
+      font-style: italic;
+      //text-decoration: underline red wavy;
+      display: none;
 }
+
+  h1, h2, h3 {
+      display:none;
+  }
 
   section {
     border: 5px double rgb(123, 212, 175);
     margin-top: 10px;
+  }
+
+  .right, .left {
+    display: inline-block;
+    width: 260px;
+    padding: 0;
+    margin: 0;
+      background: linear-gradient(
+        105deg,
+        rgba(255, 255, 255, 0.2) 60%,
+        rgba(51, 56, 57, 1) 96%
+      ) center center / 400px no-repeat, lightgreen;
+  }
+
+  #container {
+    display: flex;
   }
 
   ul, li {
@@ -140,14 +180,24 @@
   </head>
 <body>
   <header>
-    <h1>陳才元 作品集展示</h1>
+    <h1>陳才元 作品集</h1><h2 id="current_date"></h2><h3 id="current_time"></h3>
     <ul>
       <li>
         <label for="name"><a href="https://chenalex207.github.io/weather-app/"> 今日天氣 (React App) </a></label>
       </li>    
     </ul>
+
   </header>
-<div>
+
+<div id="container">
+
+ <aside class="left">
+     <p>舍南舍北皆春水，但見群鷗日日來。<br>
+花徑不曾緣客掃，蓬門今始為君開。<br>
+盤飧市遠無兼味，樽酒家貧只舊醅。<br>
+肯與鄰翁相對飲，隔籬呼取盡餘杯。<br></p>
+ </aside>
+
   <section>  
 
       <ul class="subject">
@@ -233,20 +283,11 @@
 
  </section>
  
- <aside>
-
-  <ul class="subject">
-    <li ><a href=# class="active">React</a></li>
-    <li ><a href=# class="">PHP + MySQL</a></li>
-    <li class=""><a href=#>JSP</a></li>
-    <li class=""><a href=#>Java</a></li> 
-    <li class=""><a href=#>Linux Bash Shell</a></li>      
-    <li class=""><a href=#>電路板製作</a></li>
-    <li class=""><a href=#>8051-1</a></li>
-    <li class=""><a href=#>8051-2</a></li>        
-    <li class=""><a href=#>其他</a></li>
-  </ul>
-
+ <aside class="right">
+  <p>舍南舍北皆春水，但見群鷗日日來。<br>
+花徑不曾緣客掃，蓬門今始為君開。<br>
+盤飧市遠無兼味，樽酒家貧只舊醅。<br>
+肯與鄰翁相對飲，隔籬呼取盡餘杯。<br></p>
 </aside>
 
 </div>
@@ -281,6 +322,16 @@
       }
     }
     
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var day = date.getDate();
+    var hour = date.getHours();
+    var min = date.getMinutes();
+    var sec = date.getSeconds();
+
+    document.getElementById("current_date").innerHTML = year + "年 " + month + "月 " + day + "日 ";  
+    document.getElementById("current_time").innerHTML = "登入時間: " + hour + "時 " + min + "分 " + sec + "秒 ";  
   </script>
 
 
