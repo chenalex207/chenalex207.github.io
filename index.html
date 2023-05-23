@@ -547,21 +547,29 @@
 
   <script>
 
-    var date = new Date();
-    var year = date.getFullYear();
-    var month = date.getMonth() + 1;
-    var day = date.getDate();
-    var hour = date.getHours();
-    var min = date.getMinutes();
-    var sec = date.getSeconds();
+    setInterval(myFunction, 1000);
 
-    document.getElementById("year").innerHTML = year;
-    document.getElementById("month").innerHTML = month;
-    document.getElementById("day").innerHTML = day;
+    function myFunction() {
+      let d = new Date();
 
-    document.getElementById("hour").innerHTML = hour;
-    document.getElementById("min").innerHTML = min;
-    document.getElementById("sec").innerHTML = sec;
+      document.getElementById("year").innerHTML =
+      d.getFullYear();
+
+      document.getElementById("month").innerHTML =
+      d.getMonth() + 1;
+
+      document.getElementById("day").innerHTML = 
+      d.getDate();
+
+      document.getElementById("hour").innerHTML =
+      d.getHours();
+
+      document.getElementById("min").innerHTML = 
+      d.getMinutes();
+
+      document.getElementById("sec").innerHTML =
+      d.getSeconds();
+    }
 
     $(document).ready(function(){
       $('[data-toggle="tooltip"]').tooltip();   
