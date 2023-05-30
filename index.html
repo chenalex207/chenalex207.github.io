@@ -218,7 +218,8 @@
   <body>
 
   <header>
-    <h1>陳才元 的學習記錄</h1><h2 id="current_date"><span id="year"></span>年<span id="month"></span>月<span id="day"></span>日</h2>
+    <h1>陳才元 的學習記錄</h1><p style="font-size:15px" id="welcome">歡迎光臨</p>
+    <h2 id="current_date"><span id="year"></span>年<span id="month"></span>月<span id="day"></span>日</h2>
     <h4>登入時間: </h4><h3 id="current_time"><span id="hour"></span>時 <span id="min"></span>分 <span id="sec"></span>秒</h3>
 
     <div class="container">
@@ -280,8 +281,6 @@
               <li><a data-toggle="tab" href="#bash">Linux Bash Shell</a></li>      
               <li><a data-toggle="tab" href="#circuit">電路板製作</a></li>
 
-              <li><a data-toggle="tab" href="#8051-1">8051-1</a></li>
-              <li><a data-toggle="tab" href="#8051-2">8051-2</a></li>
               <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">8051<span class="caret"></span></a>
                 <ul class="dropdown-menu" style="background-color:black">
                   <a data-toggle="tab" class="btn btn-block" href="#8051-1" style="color:white">8051-1</a>
@@ -290,6 +289,7 @@
               </li>      
        
               <li><a data-toggle="tab" href="#other">其他</a></li>
+              <li><a data-toggle="tab" href="#your-location">你的位置</a></li>
             </ul>
             <button class="btn btn-danger navbar-btn" data-toggle="tooltip" title=""><a href="https://chenalex207.github.io/old/" style="color:white" target="_blank">舊版</a></button>
 
@@ -531,6 +531,11 @@
             </li>
           </ol>
         </article>
+        <article class="tab-pane fade" id="your-location">你的位置
+          <br>
+          <br>
+          <p id="demo"></p>
+        </article>
       </div>
  
       <br></br>
@@ -596,6 +601,43 @@
       });
     });
 
+    const x = document.getElementById("demo");
+    const y = document.getElementById("welcome");
+
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(showPosition, showError);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML += "你好來自 緯度: " + position.coords.latitude +
+      "經度: " + position.coords.longitude + " 的朋友<br>";
+
+      y.innerHTML = "來自  緯度: " + position.coords.latitude +
+      "  經度: " + position.coords.longitude + " 的朋友<br> 歡迎光臨";
+    }
+
+    function showError(error) {
+      switch(error.code) {
+        case error.PERMISSION_DENIED:
+          x.innerHTML = "User denied the request for Geolocation."
+          break;
+        case error.POSITION_UNAVAILABLE:
+          x.innerHTML = "Location information is unavailable."
+          break;
+        case error.TIMEOUT:
+          x.innerHTML = "The request to get user location timed out."
+          break;
+        case error.UNKNOWN_ERROR:
+          x.innerHTML = "An unknown error occurred."
+          break;
+      }
+    }
+
+    getLocation();
   </script>
 
   </body>
