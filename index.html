@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script>
 
@@ -218,7 +219,7 @@
   <body>
 
   <header>
-    <h1>陳才元 的學習記錄</h1><p style="font-size:15px" id="welcome">歡迎光臨</p>
+    <h1>陳才元 的學習記錄</h1><p style="font-size:15px" id="welcome">歡迎光臨</p><p style="font-size:15px" id="ip"></p>
     <h2 id="current_date"><span id="year"></span>年<span id="month"></span>月<span id="day"></span>日</h2>
     <h4>登入時間: </h4><h3 id="current_time"><span id="hour"></span>時 <span id="min"></span>分 <span id="sec"></span>秒</h3>
 
@@ -603,6 +604,7 @@
 
     const x = document.getElementById("demo");
     const y = document.getElementById("welcome");
+    const z = document.getElementById("ip");
 
     function getLocation() {
       if (navigator.geolocation) {
@@ -638,6 +640,21 @@
     }
 
     getLocation();
+
+
+    // get the ip address of user who login
+    async function getIpClient() {
+      try {
+        const response = await axios.get('https://api.ipify.org?format=json');
+        console.log(response.data.ip);
+        z.innerHTML += "你的 IP 位址: " + response.data.ip;
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    getIpClient();
+
   </script>
 
   </body>
