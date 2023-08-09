@@ -275,6 +275,7 @@
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
+              <li><a data-toggle="tab" href="#node">Node</a></li>
               <li><a data-toggle="tab" href="#react">React</a></li>
               <li><a data-toggle="tab" href="#php">PHP + MySQL</a></li>
               <li><a data-toggle="tab" href="#jsp">JSP</a></li>
@@ -291,6 +292,8 @@
        
               <li><a data-toggle="tab" href="#other">其他</a></li>
               <li><a data-toggle="tab" href="#your-location">你的位置</a></li>
+              <li><a data-toggle="tab" href="#login-cookie">登入模組 1</a></li>
+              <li><a data-toggle="tab" href="#login-session">登入模組 2</a></li>
             </ul>
             <button class="btn btn-danger navbar-btn" data-toggle="tooltip" title=""><a href="https://chenalex207.github.io/old/" style="color:white" target="_blank">舊版</a></button>
 
@@ -307,7 +310,7 @@
 
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#" data-toggle="tooltip" title="no use !"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-              <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="no use !"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+              <li><a href="https://node-express-login-session-5a6c3e04ee92.herokuapp.com/" data-toggle="tooltip" data-placement="bottom" title="請登入 !"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
             <p class="navbar-text" data-toggle="" data-placement="bottom" title="">今日事，今日畢。</p>
           </div>
@@ -315,7 +318,14 @@
       </nav>
 
       <div class="tab-content">
-        <article class="tab-pane fad in active" id="react">React
+        <article class="tab-pane fade in active" id="node">Node
+          <ol>
+            <li>
+              <label for="name"><a href="https://nodejs-express-todo-cc0eb59ac38b.herokuapp.com/" target="_blank">todo list</a></label>
+            </li>
+          </ol> 
+        </article>
+        <article class="tab-pane fad in" id="react">React
           <ol>
             <li>
               <label for="name"><a href="https://chenalex207.github.io/weather-app/" target="_blank"> 今日天氣 (React App) </a></label>
@@ -340,7 +350,7 @@
           程式碼連結：https://github.com/chenalex207/react-game
           </p>
         </article>  
-        <article class="tab-pane fade in active" id="php">PHP + MySQL
+        <article class="tab-pane fade in" id="php">PHP + MySQL
           <ol>
             <li>
               <label for="name"><a href="https://youtu.be/M3oe7Y3vVwI" target="_blank">餐廳管理系統 (designed by MySQL+PHP)</a></label>
@@ -536,6 +546,20 @@
           <br>
           <br>
           <p id="demo"></p>
+        </article>
+        <article class="tab-pane fade" id="login-cookie">登入模組 1
+          <ol>
+            <li>
+              <label for="msg"><a href="https://node-express-login-4059ce0ebeb7.herokuapp.com/" target="_blank">登入模組 1</a></label>
+            </li>
+          </ol>
+        </article>
+        <article class="tab-pane fade" id="login-session">登入模組 2
+          <ol>
+            <li>
+              <label for="msg"><a href="https://node-express-login-session-5a6c3e04ee92.herokuapp.com/" target="_blank">登入模組 2</a></label>
+            </li>
+          </ol>
         </article>
       </div>
  
