@@ -292,8 +292,15 @@
        
               <li><a data-toggle="tab" href="#other">其他</a></li>
               <li><a data-toggle="tab" href="#your-location">你的位置</a></li>
-              <li><a data-toggle="tab" href="#login-cookie">登入模組 1</a></li>
-              <li><a data-toggle="tab" href="#login-session">登入模組 2</a></li>
+              
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">登入模組<span class="caret"></span></a>
+                <ul class="dropdown-menu" style="background-color:black">
+                  <a data-toggle="tab" class="btn btn-block" href="#login-cookie" style="color:white">登入模組 1</a>
+                  <a data-toggle="tab" class="btn btn-block" href="#login-session" style="color:white">登入模組 2</a>
+                </ul>
+              </li>
+
+              <li><a data-toggle="tab" href="#signup">註冊模組</a></li>
             </ul>
             <button class="btn btn-danger navbar-btn" data-toggle="tooltip" title=""><a href="https://chenalex207.github.io/old/" style="color:white" target="_blank">舊版</a></button>
 
@@ -309,7 +316,7 @@
             </form>
 
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#" data-toggle="tooltip" title="no use !"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="https://node-express-signup-48e0b1a7c534.herokuapp.com/" data-toggle="tooltip" title="請註冊 !"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
               <li><a href="https://node-express-login-session-5a6c3e04ee92.herokuapp.com/" data-toggle="tooltip" data-placement="bottom" title="請登入 !"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
             <p class="navbar-text" data-toggle="" data-placement="bottom" title="">今日事，今日畢。</p>
@@ -558,6 +565,13 @@
           <ol>
             <li>
               <label for="msg"><a href="https://node-express-login-session-5a6c3e04ee92.herokuapp.com/" target="_blank">登入模組 2</a></label>
+            </li>
+          </ol>
+        </article>
+        <article class="tab-pane fade" id="signup">註冊模組
+          <ol>
+            <li>
+              <label for="msg"><a href="https://node-express-signup-48e0b1a7c534.herokuapp.com/" target="_blank">註冊模組</a></label>
             </li>
           </ol>
         </article>
